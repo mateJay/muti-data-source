@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <properties resource="generator.properties"></properties>
+    <classPathEntry location="${jdbc.driverLocation}" />
+    <context id="ScanRecharge" targetRuntime="MyBatis3">
+        <commentGenerator type="org.mybatis.generator.internal.HairyCommentGenerator">
+            <property name="javaFileEncoding" value="UTF-8"/>
+            <property name="suppressDate" value="true" />
+            <property name="suppressAllComments" value="true" />
+        </commentGenerator>
+        <jdbcConnection driverClass="${jdbc.driverClass}" connectionURL="${jdbc.connectionURL}" userId="${jdbc.userId}" password="${jdbc.password}">
+        </jdbcConnection>
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false" />
+        </javaTypeResolver>
+
+        <javaModelGenerator targetPackage="com.matej.multidatasource.entity.db2" targetProject="src/main/java">
+            <property name="enableSubPackages" value="true" />
+            <property name="trimStrings" value="true" />
+        </javaModelGenerator>
+
+        <sqlMapGenerator targetPackage="db2" targetProject="src/main/resources/mapper">
+            <property name="enableSubPackages" value="true" />
+        </sqlMapGenerator>
+
+        <!-- #ANNOTATEDMAPPER,MIXEDMAPPER,XMLMAPPER -->
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.matej.multidatasource.repository.db2" targetProject="src/main/java">
+            <property name="enableSubPackages" value="true" />
+        </javaClientGenerator>
+
+        <!--
+        <table schema="DB2ADMIN" tableName="ALLTYPES" domainObjectName="Customer" >
+                 <property name="useActualColumnNames" value="true"/>
+                  <generatedKey column="ID" sqlStatement="DB2" identity="true" />
+                  <columnOverride column="DATE_FIELD" property="startDate" />
+                  <ignoreColumn column="FRED" />
+                  <columnOverride column="LONG_VARCHAR_FIELD" jdbcType="VARCHAR" />
+        </table>
+         -->
+
+        <!--
+        <table tableName="tbFileTransTask" domainObjectName="FileTransTask" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+                 <property name="useActualColumnNames" value="true"/>
+                  <generatedKey column="id" sqlStatement="MySql" identity="true" />
+        </table>
+         -->
+
+        <!--
+         <table tableName="tbSentence" domainObjectName="Sentence" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+                 <property name="useActualColumnNames" value="true"/>
+                  <generatedKey column="id" sqlStatement="MySql" identity="true" />
+        </table>
+         -->
+
+        <!--
+        <table tableName="tbOrder" domainObjectName="Order" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+                 <property name="useActualColumnNames" value="true"/>
+                  <generatedKey column="id" sqlStatement="MySql" identity="true" />
+        </table>
+         -->
+        <!--
+        <table tableName="tbOrderDetail" domainObjectName="OrderDetail" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+                 <property name="useActualColumnNames" value="true"/>
+                  <generatedKey column="id" sqlStatement="MySql" identity="true" />
+        </table>
+         -->
+        <!--
+        <table tableName="tbFileInfo" domainObjectName="FileInfo" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+                 <property name="useActualColumnNames" value="true"/>
+                  <generatedKey column="id" sqlStatement="MySql" identity="true" />
+        </table>
+         -->
+
+        <!--
+        <table tableName="tbFileChunk" domainObjectName="FileChunk" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+                <property name="useActualColumnNames" value="true"/>
+                 <generatedKey column="id" sqlStatement="MySql" identity="true" />
+       </table>
+         -->
+
+        <!--
+        <table tableName="tbTrade" domainObjectName="Trade" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+                 <property name="useActualColumnNames" value="true"/>
+                  <generatedKey column="id" sqlStatement="MySql" identity="true" />
+        </table>
+         -->
+
+        <table tableName="tbDb2User" domainObjectName="Db2User" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+            <property name="useActualColumnNames" value="true"/>
+            <generatedKey column="id" sqlStatement="MySql" identity="true" />
+        </table>
+
+    </context>
+</generatorConfiguration>

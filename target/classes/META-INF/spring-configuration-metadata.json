@@ -1,0 +1,47 @@
+{
+  "groups": [
+    {
+      "name": "datasource.mysql1",
+      "type": "com.matej.multidatasource.config.DBConfig1",
+      "sourceType": "com.matej.multidatasource.config.DBConfig1"
+    },
+    {
+      "name": "datasource.mysql2",
+      "type": "com.matej.multidatasource.config.DBConfig2",
+      "sourceType": "com.matej.multidatasource.config.DBConfig2"
+    }
+  ],
+  "properties": [
+    {
+      "name": "datasource.mysql1.password",
+      "type": "java.lang.String",
+      "sourceType": "com.matej.multidatasource.config.DBConfig1"
+    },
+    {
+      "name": "datasource.mysql1.url",
+      "type": "java.lang.String",
+      "sourceType": "com.matej.multidatasource.config.DBConfig1"
+    },
+    {
+      "name": "datasource.mysql1.username",
+      "type": "java.lang.String",
+      "sourceType": "com.matej.multidatasource.config.DBConfig1"
+    },
+    {
+      "name": "datasource.mysql2.password",
+      "type": "java.lang.String",
+      "sourceType": "com.matej.multidatasource.config.DBConfig2"
+    },
+    {
+      "name": "datasource.mysql2.url",
+      "type": "java.lang.String",
+      "sourceType": "com.matej.multidatasource.config.DBConfig2"
+    },
+    {
+      "name": "datasource.mysql2.username",
+      "type": "java.lang.String",
+      "sourceType": "com.matej.multidatasource.config.DBConfig2"
+    }
+  ],
+  "hints": []
+}

@@ -1,0 +1,11 @@
+datasource:
+  mysql1:
+    url: 'jdbc:mysql://47.96.226.94:3306/db1?&useUnicode=true&useSSL=false&characterEncoding=UTF-8&autoReconnect=true&failOverReadOnly=false&zeroDateTimeBehavior=convertToNull'
+    username: 'root'
+    password: 'o49mZhodNB9wVKOu'
+  mysql2:
+    url: 'jdbc:mysql://47.96.226.94:3306/db2?&useUnicode=true&useSSL=false&characterEncoding=UTF-8&autoReconnect=true&failOverReadOnly=false&zeroDateTimeBehavior=convertToNull'
+    username: 'root'
+    password: 'o49mZhodNB9wVKOu'
+
+
